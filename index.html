@@ -1,0 +1,21 @@
+<html>
+<head>
+  <link href="//abanobem.github.io/videojs/videojs.css" rel="stylesheet" />
+  <link href="//abanobem.github.io/videojs/chromecast.min.css" rel="stylesheet">
+  <script src="//abanobem.github.io/videojs/videojs-ie8.min.js"></script>
+  <script src="//abanobem.github.io/videojs/video.min.js"></script>
+  <script src="//abanobem.github.io/videojs/video.core.min.js"></script>
+  <script src="//abanobem.github.io/videojs/chromecast.smc.min.js"></script>  
+</head>
+<body>
+<video id="smcplayer" class="video-js vjs-default-skin" playsinline>
+  <source src="https://58cc65c534c67.streamlock.net/ctvchannel.tv/ctv.smil/playlist.m3u8" type="application/x-mpegURL" />
+  <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video</p>
+</video>
+<script>
+  var player=videojs('smcplayer',{
+  'autoplay': true
+  });
+</script>
+</body>
+</html>
