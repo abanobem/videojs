@@ -15,10 +15,9 @@
 <script>
   var player=videojs('smcplayer',{
     'autoplay': true,
-    'textTrackSettings':true,
     'fluid':true,
 
-    'html5':{'hls':{'handleManifestRedirects':true,'overrideNative':!!true}},
+    'html5':{'nativeVideoTracks': true},
   });
 </script>
 </body>
